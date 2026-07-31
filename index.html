@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f97316">
+
+<title>DeLorenzo Electrical | Residential & Commercial Electrical Services | Western New York</title>
+
+<meta name="description" content="DeLorenzo Electrical provides residential and commercial electrical services throughout Western New York. Family-owned with over 30 years of experience, we deliver honest, professional, and reliable electrical work. Licensed and insured.">
+
+<meta property="og:title" content="DeLorenzo Electrical | Residential & Commercial Electrical Services">
+<meta property="og:description" content="Family-owned electrical contractor serving Western New York. Residential & commercial electrical services with over 30 years of experience.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://delorenzoelectricalwny.com/images/heroimage.webp">
+<meta property="og:url" content="https://delorenzoelectricalwny.com">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DeLorenzo Electrical">
+<meta name="twitter:description" content="Residential & Commercial Electrical Services throughout Western New York.">
+<meta name="twitter:image" content="https://delorenzoelectricalwny.com/images/heroimage.webp">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  /* ---------- Reset ---------- */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+  input, textarea, select { font: inherit; color: inherit; }
+  ul { list-style: none; }
+
+  /* ---------- Tokens ---------- */
+  :root {
+    --charcoal: #1F2937;
+    --charcoal-2: #111827;
+    --charcoal-3: #0B0F16;
+    --white: #FFFFFF;
+    --orange: #F97316;
+    --orange-600: #EA580C;
+    --orange-50: #FFF7ED;
+    --ink: #0B0F16;
+    --muted: #6B7280;
+    --muted-2: #9CA3AF;
+    --line: rgba(31, 41, 55, 0.10);
+    --line-2: rgba(31, 41, 55, 0.06);
+    --bg: #F7F8FA;
+    --bg-2: #FFFFFF;
+    --radius: 22px;
+    --radius-lg: 30px;
+    --radius-xl: 40px;
+    --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+    --shadow: 0 10px 30px -12px rgba(16, 24, 40, 0.12), 0 4px 12px -4px rgba(16, 24, 40, 0.06);
+    --shadow-lg: 0 30px 60px -20px rgba(16, 24, 40, 0.22), 0 10px 24px -10px rgba(16, 24, 40, 0.10);
+    --shadow-orange: 0 18px 40px -12px rgba(249, 115, 22, 0.45);
+    --maxw: 1200px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--charcoal);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    color: var(--ink);
+  }
+
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--orange-600);
+  }
+  .eyebrow::before {
+    content: ""; width: 22px; height: 2px; background: var(--orange); border-radius: 2px;
+  }
+
+  .section { padding: 110px 0; }
+  .section-head { max-width: 640px; margin-bottom: 56px; }
+  .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .section-head.center .eyebrow::before { display: none; }
+  .section-head.center .eyebrow { justify-content: center; }
+  .section-head h2 { font-size: clamp(2rem, 4.4vw, 3.1rem); margin: 16px 0 14px; }
+  .section-head p { color: var(--muted); font-size: 1.075rem; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 15px 26px; border-radius: 999px; font-weight: 700; font-size: 0.97rem;
+    transition: transform .35s var(--ease), box-shadow .35s var(--ease), background .25s, color .25s;
+    will-change: transform;
+  }
+  .btn-primary { background: var(--orange); color: #fff; box-shadow: var(--shadow-orange); }
+  .btn-primary:hover { transform: translateY(-3px); background: var(--orange-600); }
+  .btn-dark { background: var(--charcoal); color: #fff; }
+  .btn-dark:hover { transform: translateY(-3px); background: var(--charcoal-2); }
+  .btn-ghost { background: rgba(255,255,255,0.7); color: var(--charcoal); border: 1px solid var(--line); backdrop-filter: blur(10px); }
+  .btn-ghost:hover { transform: translateY(-3px); border-color: var(--charcoal); }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    transition: background .4s var(--ease), box-shadow .4s var(--ease), padding .4s var(--ease);
+    padding: 22px 0;
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: var(--maxw); margin: 0 auto; padding: 0 24px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    width: 42px; height: 42px; border-radius: 13px;
+    background: linear-gradient(135deg, var(--orange), var(--orange-600));
+    display: grid; place-items: center; color: #fff;
+    box-shadow: var(--shadow-orange); flex-shrink: 0;
+  }
+  .brand-mark svg { width: 22px; height: 22px; }
+  .brand-name { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.18rem; letter-spacing: -0.02em; color: var(--charcoal); line-height: 1; }
+  .brand-sub { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+
+  .nav-links { display: flex; align-items: center; gap: 4px; }
+  .nav-links a {
+    padding: 10px 16px; border-radius: 999px; font-weight: 600; font-size: 0.93rem; color: var(--charcoal);
+    transition: background .25s, color .25s;
+  }
+  .nav-links a:hover { background: rgba(31,41,55,0.06); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-phone { font-weight: 700; font-size: 0.95rem; color: var(--charcoal); display: flex; align-items: center; gap: 8px; }
+  .nav-phone svg { width: 16px; height: 16px; color: var(--orange); }
+
+  .nav.scrolled {
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    box-shadow: 0 1px 0 rgba(31,41,55,0.06), 0 8px 24px -16px rgba(16,24,40,0.18);
+    padding: 14px 0;
+  }
+
+  .burger { display: none; width: 44px; height: 44px; border-radius: 12px; place-items: center; background: rgba(31,41,55,0.05); }
+  .burger span { display: block; width: 20px; height: 2px; background: var(--charcoal); border-radius: 2px; position: relative; transition: transform .3s, opacity .3s; }
+  .burger span::before, .burger span::after { content:""; position:absolute; left:0; width:20px; height:2px; background: var(--charcoal); border-radius: 2px; transition: transform .3s; }
+  .burger span::before { top: -6px; } .burger span::after { top: 6px; }
+  .menu-open .burger span { background: transparent; }
+  .menu-open .burger span::before { transform: translateY(6px) rotate(45deg); }
+  .menu-open .burger span::after { transform: translateY(-6px) rotate(-45deg); }
+
+  .mobile-menu {
+    position: fixed; inset: 0; z-index: 99;
+    background: rgba(255,255,255,0.92); backdrop-filter: blur(20px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+    opacity: 0; pointer-events: none; transition: opacity .4s var(--ease);
+  }
+  .menu-open .mobile-menu { opacity: 1; pointer-events: auto; }
+  .mobile-menu a { font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--charcoal); padding: 10px 20px; }
+  .mobile-menu .btn { margin-top: 18px; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative; min-height: 100vh; display: flex; align-items: center;
+    padding: 140px 0 80px; overflow: hidden;
+    background: radial-gradient(120% 90% at 80% 0%, #2A3441 0%, var(--charcoal) 45%, var(--charcoal-3) 100%);
+    color: #fff;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(600px 400px at 88% 18%, rgba(249,115,22,0.28), transparent 60%),
+      radial-gradient(500px 500px at 10% 90%, rgba(249,115,22,0.10), transparent 60%);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; opacity: 0.5;
+    background-image: url("images/heroimage.webp");
+    background-size: cover; background-position: center;
+    mix-blend-mode: luminosity; opacity: 0.12;
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 60px; align-items: center; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 9px 16px; border-radius: 999px;
+    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16);
+    backdrop-filter: blur(10px); font-size: 13px; font-weight: 600; color: #fff;
+    margin-bottom: 28px;
+  }
+  .hero-eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 4px rgba(249,115,22,0.25); }
+  .hero h1 {
+    color: #fff; font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 900;
+    line-height: 1.04; letter-spacing: -0.03em; margin-bottom: 24px;
+  }
+  .hero h1 .accent { color: var(--orange); }
+  .hero p.lead { font-size: 1.2rem; color: rgba(255,255,255,0.78); max-width: 540px; margin-bottom: 38px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero .btn-ghost { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.18); }
+  .hero .btn-ghost:hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.4); }
+
+  .hero-stats { display: flex; gap: 36px; margin-top: 52px; flex-wrap: wrap; }
+  .hero-stat .num { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 2.1rem; color: #fff; letter-spacing: -0.02em; }
+  .hero-stat .num span { color: var(--orange); }
+  .hero-stat .label { font-size: 0.85rem; color: rgba(255,255,255,0.6); font-weight: 500; }
+
+  .hero-card {
+    position: relative; border-radius: var(--radius-xl);
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14);
+    backdrop-filter: blur(20px); padding: 28px; box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+  .hero-card-img {
+    border-radius: 24px; overflow: hidden; aspect-ratio: 4/3; margin-bottom: 22px;
+    box-shadow: var(--shadow);
+  }
+  .hero-card-img img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-card-row { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.1); }
+  .hero-card-row:first-of-type { border-top: none; }
+  .hero-card-row .ic { width: 40px; height: 40px; border-radius: 12px; background: rgba(249,115,22,0.18); display: grid; place-items: center; color: var(--orange); flex-shrink: 0; }
+  .hero-card-row .ic svg { width: 20px; height: 20px; }
+  .hero-card-row .t { font-weight: 700; font-size: 0.97rem; color: #fff; }
+  .hero-card-row .s { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+
+  .hero-scroll { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(255,255,255,0.5); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .hero-scroll .mouse { width: 24px; height: 38px; border: 2px solid rgba(255,255,255,0.3); border-radius: 14px; position: relative; }
+  .hero-scroll .mouse::after { content:""; position: absolute; top: 7px; left: 50%; transform: translateX(-50%); width: 4px; height: 8px; background: var(--orange); border-radius: 2px; animation: scrollDot 1.8s infinite; }
+  @keyframes scrollDot { 0% { opacity: 0; transform: translate(-50%, 0); } 40% { opacity: 1; } 80% { opacity: 0; transform: translate(-50%, 12px); } 100% { opacity: 0; } }
+
+  /* ---------- Marquee ---------- */
+  .marquee { background: var(--charcoal); color: #fff; padding: 22px 0; overflow: hidden; position: relative; }
+  .marquee-track { display: flex; gap: 60px; white-space: nowrap; animation: marquee 28s linear infinite; }
+  .marquee-item { display: inline-flex; align-items: center; gap: 14px; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+  .marquee-item svg { width: 18px; height: 18px; color: var(--orange); }
+  .marquee-item .sep { color: rgba(255,255,255,0.25); margin-left: 46px; }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+
+  /* ---------- Why ---------- */
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .why-card {
+    background: #fff; border: 1px solid var(--line-2); border-radius: var(--radius);
+    padding: 36px 30px; box-shadow: var(--shadow-sm);
+    transition: transform .5s var(--ease), box-shadow .5s var(--ease), border-color .3s;
+  }
+  .why-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: rgba(249,115,22,0.3); }
+  .why-ic {
+    width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--orange-50), #FFE9D6); color: var(--orange-600);
+    margin-bottom: 22px; transition: transform .5s var(--ease);
+  }
+  .why-card:hover .why-ic { transform: scale(1.08) rotate(-4deg); }
+  .why-ic svg { width: 26px; height: 26px; }
+  .why-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+  .why-card p { color: var(--muted); font-size: 0.98rem; }
+
+  /* ---------- Services ---------- */
+  .services { background: var(--bg-2); }
+  .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .service-card {
+    position: relative; border-radius: var(--radius-lg); overflow: hidden;
+    min-height: 340px; display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 32px; color: #fff; isolation: isolate;
+    transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+  .service-card::before {
+    content: ""; position: absolute; inset: 0; z-index: -2;
+    background-size: cover; background-position: center;
+    transition: transform .8s var(--ease);
+  }
+  .service-card:hover::before { transform: scale(1.08); }
+  .service-card::after {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(180deg, rgba(11,15,22,0.1) 0%, rgba(11,15,22,0.85) 100%);
+  }
+  .service-card .tag {
+    display: inline-flex; align-items: center; gap: 8px; align-self: flex-start;
+    padding: 7px 14px; border-radius: 999px; margin-bottom: 14px;
+    background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.22);
+    backdrop-filter: blur(8px); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .service-card h3 { color: #fff; font-size: 1.6rem; margin-bottom: 8px; }
+  .service-card p { color: rgba(255,255,255,0.82); font-size: 0.97rem; max-width: 420px; }
+  .service-card .arrow {
+    position: absolute; top: 28px; right: 28px; width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.22);
+    display: grid; place-items: center; backdrop-filter: blur(8px);
+    transition: background .3s, transform .4s var(--ease);
+  }
+  .service-card:hover .arrow { background: var(--orange); transform: rotate(-45deg); }
+  .service-card .arrow svg { width: 18px; height: 18px; }
+
+ .svc-res::before {
+    background-image: url("images/RESIDENTIALIMAGE.webp");
+}
+
+.svc-com::before {
+    background-image: url("images/commercialimage.webp");
+}
+
+.svc-pan::before {
+    background-image: url("images/panelimage.webp");
+}
+
+.svc-out::before {
+    background-image: url("images/OUTDOORIMAGE.webp");
+}
+
+  .services-extra { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
+  .pill {
+    background: var(--bg); border: 1px solid var(--line-2); border-radius: 16px;
+    padding: 18px 20px; display: flex; align-items: center; gap: 12px; font-weight: 600; font-size: 0.92rem;
+    transition: border-color .3s, background .3s, transform .35s var(--ease);
+  }
+  .pill:hover { transform: translateY(-3px); border-color: var(--orange); background: #fff; }
+  .pill .d { width: 10px; height: 10px; border-radius: 50%; background: var(--orange); flex-shrink: 0; box-shadow: 0 0 0 4px rgba(249,115,22,0.15); }
+
+  /* ---------- Work ---------- */
+  .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .work-card {
+    border-radius: var(--radius-lg); overflow: hidden; background: #fff;
+    border: 1px solid var(--line-2); box-shadow: var(--shadow-sm);
+    transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+  }
+  .work-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+  .work-img { aspect-ratio: 4/3; overflow: hidden; }
+  .work-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+  .work-card:hover .work-img img { transform: scale(1.06); }
+  .work-body { padding: 24px 24px 28px; }
+  .work-cat { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--orange-600); margin-bottom: 8px; }
+  .work-body h3 { font-size: 1.22rem; margin-bottom: 8px; }
+  .work-body p { color: var(--muted); font-size: 0.92rem; }
+
+  /* ---------- About ---------- */
+  .about { background: var(--charcoal); color: #fff; position: relative; overflow: hidden; }
+  .about::before {
+    content:""; position:absolute; top:-20%; right:-10%; width: 60%; height: 120%;
+    background: radial-gradient(circle, rgba(249,115,22,0.18), transparent 60%);
+    pointer-events: none;
+  }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; position: relative; }
+  .about-eyebrow { color: var(--orange); }
+  .about-eyebrow::before { background: var(--orange); }
+  .about h2 { color: #fff; font-size: clamp(2rem, 4.2vw, 3rem); margin: 16px 0 20px; }
+  .about p { color: rgba(255,255,255,0.78); font-size: 1.08rem; margin-bottom: 18px; }
+  .about-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; margin: 28px 0 36px; }
+  .about-list li { display: flex; align-items: center; gap: 12px; font-weight: 600; color: rgba(255,255,255,0.92); }
+  .about-list .ck { width: 26px; height: 26px; border-radius: 8px; background: rgba(249,115,22,0.18); color: var(--orange); display: grid; place-items: center; flex-shrink: 0; }
+  .about-list .ck svg { width: 15px; height: 15px; }
+
+  .about-media { position: relative; }
+  .about-img-main { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); aspect-ratio: 4/5; }
+  .about-img-main img { width: 100%; height: 100%; object-fit: cover; }
+  .about-badge {
+    position: absolute; bottom: -24px; left: -24px;
+    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(18px); border-radius: 22px; padding: 22px 26px; color: #fff;
+    box-shadow: var(--shadow-lg);
+  }
+  .about-badge .big { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 2.6rem; color: var(--orange); line-height: 1; letter-spacing: -0.02em; }
+  .about-badge .lbl { font-size: 0.85rem; color: rgba(255,255,255,0.75); font-weight: 600; margin-top: 4px; }
+
+  /* ---------- Reviews ---------- */
+  .reviews { background: var(--bg-2); }
+  .reviews-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 48px; flex-wrap: wrap; }
+  .g-badge {
+    display: inline-flex; align-items: center; gap: 14px; padding: 14px 22px; border-radius: 16px;
+    background: #fff; border: 1px solid var(--line-2); box-shadow: var(--shadow-sm);
+  }
+  .g-logo { width: 36px; height: 36px; display: grid; place-items: center; }
+  .g-logo svg { width: 30px; height: 30px; }
+  .g-score { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.3rem; }
+  .g-stars { display: flex; gap: 2px; color: #FBBF24; }
+  .g-stars svg { width: 18px; height: 18px; }
+  .g-meta { font-size: 0.85rem; color: var(--muted); }
+
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .review-card {
+    background: #fff; border: 1px solid var(--line-2); border-radius: var(--radius);
+    padding: 30px 28px; box-shadow: var(--shadow-sm);
+    transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+    display: flex; flex-direction: column;
+  }
+  .review-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+  .review-stars { display: flex; gap: 3px; color: #FBBF24; margin-bottom: 16px; }
+  .review-stars svg { width: 18px; height: 18px; }
+  .review-card p { color: var(--charcoal); font-size: 1rem; line-height: 1.65; margin-bottom: 22px; flex: 1; }
+  .review-author { display: flex; align-items: center; gap: 12px; }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; color: #fff; font-family: 'Manrope', sans-serif; flex-shrink: 0; }
+  .review-author .name { font-weight: 700; font-size: 0.95rem; }
+  .review-author .when { font-size: 0.82rem; color: var(--muted); }
+
+  /* ---------- Contact ---------- */
+  .contact { background: var(--bg); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: start; }
+  .contact-info h2 { font-size: clamp(2rem, 4.2vw, 3rem); margin: 16px 0 18px; }
+  .contact-info p { color: var(--muted); font-size: 1.05rem; margin-bottom: 36px; }
+  .contact-rows { display: flex; flex-direction: column; gap: 18px; }
+  .contact-row { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: #fff; border: 1px solid var(--line-2); border-radius: 18px; box-shadow: var(--shadow-sm); transition: transform .35s var(--ease), border-color .3s; }
+  .contact-row:hover { transform: translateX(4px); border-color: var(--orange); }
+  .contact-row .ic { width: 48px; height: 48px; border-radius: 14px; background: var(--orange-50); color: var(--orange-600); display: grid; place-items: center; flex-shrink: 0; }
+  .contact-row .ic svg { width: 22px; height: 22px; }
+  .contact-row .lbl { font-size: 0.8rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+  .contact-row .val { font-weight: 700; font-size: 1.02rem; color: var(--charcoal); }
+
+  .form-card {
+    background: #fff; border: 1px solid var(--line-2); border-radius: var(--radius-lg);
+    padding: 40px; box-shadow: var(--shadow-lg);
+  }
+  .form-card h3 { font-size: 1.5rem; margin-bottom: 6px; }
+  .form-card .sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 28px; }
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 8px; color: var(--charcoal); }
+  .field input, .field textarea, .field select {
+    width: 100%; padding: 14px 16px; border-radius: 14px; border: 1.5px solid var(--line);
+    background: var(--bg); transition: border-color .25s, background .25s, box-shadow .25s;
+    font-size: 0.97rem;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus {
+    outline: none; border-color: var(--orange); background: #fff; box-shadow: 0 0 0 4px rgba(249,115,22,0.12);
+  }
+  .field textarea { resize: vertical; min-height: 120px; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-card .btn { width: 100%; margin-top: 8px; }
+  .form-note { font-size: 0.82rem; color: var(--muted); text-align: center; margin-top: 14px; }
+  .form-success {
+    display: none; text-align: center; padding: 30px 10px;
+  }
+  .form-success.show { display: block; animation: fadeUp .6s var(--ease); }
+  .form-success .check { width: 64px; height: 64px; border-radius: 50%; background: var(--orange-50); color: var(--orange-600); display: grid; place-items: center; margin: 0 auto 18px; }
+  .form-success .check svg { width: 30px; height: 30px; }
+  .form-success h3 { margin-bottom: 8px; }
+  .form-success p { color: var(--muted); }
+
+  /* ---------- Footer ---------- */
+  .footer { background: var(--charcoal-3); color: #fff; padding: 80px 0 36px; position: relative; overflow: hidden; }
+  .footer::before { content:""; position:absolute; top:0; left:50%; transform:translateX(-50%); width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(249,115,22,0.5), transparent); }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+  .footer .brand-name { color: #fff; }
+  .footer .brand-sub { color: rgba(255,255,255,0.5); }
+  .footer-about p { color: rgba(255,255,255,0.6); margin: 22px 0; max-width: 320px; font-size: 0.95rem; }
+  .footer-social { display: flex; gap: 10px; }
+  .footer-social a { width: 42px; height: 42px; border-radius: 12px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); display: grid; place-items: center; transition: background .3s, transform .3s; }
+  .footer-social a:hover { background: var(--orange); transform: translateY(-3px); }
+  .footer-social svg { width: 18px; height: 18px; }
+  .footer-col h4 { color: #fff; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 20px; font-family: 'Inter', sans-serif; font-weight: 700; }
+  .footer-col ul li { margin-bottom: 12px; }
+  .footer-col ul a { color: rgba(255,255,255,0.6); font-size: 0.95rem; transition: color .25s; }
+  .footer-col ul a:hover { color: var(--orange); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); flex-wrap: wrap; gap: 14px; }
+  .footer-bottom p { color: rgba(255,255,255,0.5); font-size: 0.88rem; }
+  .footer-bottom .links { display: flex; gap: 24px; }
+  .footer-bottom .links a { color: rgba(255,255,255,0.5); font-size: 0.88rem; }
+  .footer-bottom .links a:hover { color: var(--orange); }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal.d1 { transition-delay: .08s; }
+  .reveal.d2 { transition-delay: .16s; }
+  .reveal.d3 { transition-delay: .24s; }
+  .reveal.d4 { transition-delay: .32s; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 980px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero { min-height: auto; padding-top: 120px; }
+    .hero-card { max-width: 480px; }
+    .why-grid, .reviews-grid, .work-grid { grid-template-columns: 1fr 1fr; }
+    .services-grid { grid-template-columns: 1fr; }
+    .services-extra { grid-template-columns: 1fr 1fr; }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+    .section { padding: 80px 0; }
+  }
+  @media (max-width: 680px) {
+    .nav-links, .nav-phone { display: none; }
+    .burger { display: grid; }
+    .why-grid, .reviews-grid, .work-grid, .services-extra { grid-template-columns: 1fr; }
+    .field-row { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 24px; }
+    .hero-stat .num { font-size: 1.7rem; }
+    .section-head h2 { font-size: 1.9rem; }
+    .form-card { padding: 28px 22px; }
+    .about-list { grid-template-columns: 1fr; }
+    .reviews-head { flex-direction: column; align-items: flex-start; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand" aria-label="DeLorenzo Electrical home">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+      </span>
+      <span>
+        <span class="brand-name">DeLorenzo</span><br>
+        <span class="brand-sub">Electrical</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#why">Why Us</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:+17167318000" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        716-731-8000
+      </a>
+      <a href="#contact" class="btn btn-primary">Request a Quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#why">Why Us</a>
+  <a href="#services">Services</a>
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary">Request a Quote</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="hero-eyebrow reveal"><span class="dot"></span> Family-Owned · Western New York</span>
+      <h1 class="reveal d1">Experience You Can <span class="accent">Count On.</span></h1>
+      <p class="lead reveal d2">For over 30 years, DeLorenzo Electrical has powered homes and businesses across Western New York with honest, professional, and reliable electrical work — backed by a family name you can trust.</p>
+      <div class="hero-actions reveal d3">
+        <a href="#contact" class="btn btn-primary">Request a Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost">Our Services</a>
+      </div>
+      <div class="hero-stats reveal d4">
+        <div class="hero-stat"><div class="num"><span>30</span>+</div><div class="label">Years Experience</div></div>
+        <div class="hero-stat"><div class="num"><span>5,000</span>+</div><div class="label">Projects Completed</div></div>
+        <div class="hero-stat"><div class="num"><span>5</span>★</div><div class="label">Google Rating</div></div>
+      </div>
+    </div>
+    <div class="hero-card reveal d2">
+      <div class="hero-card-img">
+        <img src="images/heroimage.webp"
+     alt="DeLorenzo Electrical electrician at work"
+     loading="eager" />
+      </div>
+      <div class="hero-card-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 5-3.5 7.5-8.5 9.5C7.5 19.5 4 17 4 12V6l8.5-3.5L21 6v6z"/></svg></span>
+        <div><div class="t">Licensed & Insured</div><div class="s">Fully certified in New York State</div></div>
+      </div>
+      <div class="hero-card-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+        <div><div class="t">Trusted Across Western New York</div><div class="s">Emergency service available</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="mouse"></div>Scroll</div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee">
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg> Residential Electrical<span class="sep">/</span></span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg> Commercial Electrical<span class="sep">/</span></span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 5-3.5 7.5-8.5 9.5C7.5 19.5 4 17 4 12V6l8.5-3.5L21 6v6z"/></svg> Licensed & Insured<span class="sep">/</span></span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg> 30+ Years of Experience<span class="sep">/</span></span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg> Residential Electrical<span class="sep">/</span></span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg> Commercial Electrical<span class="sep">/</span></span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 5-3.5 7.5-8.5 9.5C7.5 19.5 4 17 4 12V6l8.5-3.5L21 6v6z"/></svg> Licensed & Insured<span class="sep">/</span></span>
+    <span class="marquee-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg> 30+ Years of Experience<span class="sep">/</span></span>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>The DeLorenzo difference</h2>
+      <p>Three decades of trusted electrical work, built on honesty, craftsmanship, and treating every customer like family.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Family-Owned</h3>
+        <p>A local family business for over 30 years — we treat your home like it's our own, and stand behind every job.</p>
+      </div>
+      <div class="why-card reveal d1">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Licensed & Insured</h3>
+        <p>Fully certified and insured in New York State, so you're always protected with work that meets code.</p>
+      </div>
+      <div class="why-card reveal d2">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>On-Time, Every Time</h3>
+        <p>We respect your schedule. Clear arrival windows, fast turnarounds, and same-day emergency service.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Honest Pricing</h3>
+        <p>Upfront quotes with no surprises. You approve the price before we start — fair, transparent, and competitive.</p>
+      </div>
+      <div class="why-card reveal d1">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+        <h3>Master Craftsmanship</h3>
+        <p>From a simple outlet to a full panel upgrade, every connection is clean, safe, and built to last.</p>
+      </div>
+      <div class="why-card reveal d2">
+        <div class="why-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+        <h3>Real People, Real Support</h3>
+        <p>Talk to a DeLorenzo, not a call center. We answer the phone and stand behind our work long after we leave.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Residential & commercial electrical</h2>
+      <p>From small repairs to full-scale installations, we handle every aspect of electrical work with precision and care.</p>
+    </div>
+    <div class="services-grid">
+      <a href="#contact" class="service-card svc-res reveal">
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        <span class="tag">Residential</span>
+        <h3>Home Electrical</h3>
+        <p>Panel upgrades, lighting, wiring, outlets, ceiling fans, EV chargers, and whole-home safety inspections.</p>
+      </a>
+      <a href="#contact" class="service-card svc-com reveal d1">
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        <span class="tag">Commercial</span>
+        <h3>Commercial Electrical</h3>
+        <p>Tenant build-outs, retail lighting, office wiring, three-phase power, and maintenance for local businesses.</p>
+      </a>
+      <a href="#contact" class="service-card svc-pan reveal d2">
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        <span class="tag">Upgrades</span>
+        <h3>Panel & Service Upgrades</h3>
+        <p>Modernize outdated panels, add capacity for new appliances, and bring your home up to current code.</p>
+      </a>
+      <a href="#contact" class="service-card svc-out reveal d3">
+        <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+        <span class="tag">Outdoor</span>
+        <h3>Outdoor & Landscape</h3>
+        <p>Landscape lighting, exterior outlets, generator hookups, and weatherproof installations that last.</p>
+      </a>
+    </div>
+    <div class="services-extra">
+      <div class="pill reveal"><span class="d"></span> EV Charger Installation</div>
+      <div class="pill reveal d1"><span class="d"></span> Lighting Design</div>
+      <div class="pill reveal d2"><span class="d"></span> Safety Inspections</div>
+      <div class="pill reveal d3"><span class="d"></span> Emergency Repairs</div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recent Work</span>
+      <h2>Projects we're proud of</h2>
+      <p>A look at recent electrical work across Western New York homes and businesses.</p>
+    </div>
+    <div class="work-grid">
+      <div class="work-card reveal">
+        <div class="work-img"><img src="images/parkinglot.webp"
+     alt="Commercial parking lot lighting installation"
+     loading="lazy" /></div>
+        <div class="work-body">
+          <div class="work-cat">Residential</div>
+          <h3>Installation of a Parking Lot Light</h3>
+          <p> Install of multiple new LED parking lot lights in Buffalo for additional safety.</p>
+        </div>
+      </div>
+      <div class="work-card reveal d1">
+        <div class="work-img"><img src="images/Exteriorlighting.webp"
+     alt="Exterior lighting installation"
+     loading="lazy" /></div>
+        <div class="work-body">
+          <div class="work-cat">Commercial</div>
+          <h3>Exterior Lighting</h3>
+          <p>No bulbs to change on this new garage addition, recessed LED down lights on the outside and linear LED strip lighting on the inside! Long lasting and cost effective to operate.</p>
+        </div>
+      </div>
+      <div class="work-card reveal d2">
+        <div class="work-img"><img src="images/undergroundconduit.webp"
+     alt="Underground electrical conduit installation"
+     loading="lazy" /></div>
+        <div class="work-body">
+          <div class="work-cat">Panel Upgrade</div>
+          <h3>Underground Conduit</h3>
+          <p>Ran underground conduit for parking lot lights and power gate.</p>
+        </div>
+      </div>
+      <div class="work-card reveal">
+        <div class="work-img"><img src="images/MeterRelocation.webp"
+     alt="Electrical meter relocation"
+     loading="lazy" /></div>
+        <div class="work-body">
+          <div class="work-cat">Outdoor</div>
+          <h3>Meter Relocation</h3>
+          <p>Meter relocation and panel replacement work for a repeat customer in Williamsville.</p>
+        </div>
+      </div>
+      <div class="work-card reveal d1">
+        <div class="work-img"><img src="images/bigpanel.webp"
+     alt="Lighting installation"
+     loading="lazy" /></div>
+        <div class="work-body">
+          <div class="work-cat">Residential</div>
+          <h3>Panel Installation</h3>
+          <p>Installed multiple panels for a customer in Williamsville.</p>
+        </div>
+      </div>
+     <div class="work-card reveal d2">
+    <div class="work-img">
+        <img src="images/chandelier.webp"
+             alt="Chandelier Installation"
+             loading="lazy">
+    </div>
+
+    <div class="work-body">
+        <div class="work-cat">Safety</div>
+        <h3>Luminaire Installation</h3>
+        <p>Beautiful lighting can have a significant impact on design.</p>
+    </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy reveal">
+      <span class="eyebrow about-eyebrow">Our Story</span>
+      <h2>Three decades of powering Western New York</h2>
+      <p>Three decades ago, two brothers set out to build an electrical business on the values they were raised with — honesty, hard work, and treating every customer like family. Today, DeLorenzo Electrical is a trusted name serving homeowners and businesses across Western New York — but the values haven't changed.</p>
+      <p>We still answer the phone ourselves. We still show up when we say we will. And we still treat every job, big or small, with the same care we'd give our own family's home.</p>
+      <ul class="about-list">
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Family-owned & operated</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Licensed & insured</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> 30+ years experience</li>
+        <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Upfront, honest pricing</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">Work With Us
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="about-media reveal d2">
+      <div class="about-img-main">
+        <img src="images/sam.webp" loading="lazy" />
+      </div>
+      <div class="about-badge">
+        <div class="big">30+</div>
+        <div class="lbl">Years serving<br>Western New York</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div class="section-head reveal" style="margin-bottom:0">
+        <span class="eyebrow">Google Reviews</span>
+        <h2>Loved by our neighbors</h2>
+        <p>Real reviews from real Western New York customers.</p>
+      </div>
+      <div class="g-badge reveal d1">
+        <div class="g-logo">
+          <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.6 0 3.03.55 4.16 1.64l3.13-3.13A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
+        </div>
+        <div>
+          <div class="g-score">5.0</div>
+          <div class="g-stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="g-meta">Based on 4 reviews</div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>"Great company. Mr. DeLorenzo and his son were great. I highly recommend this company for their swift work, knowledge, and price. "</p>
+        <div class="review-author">
+          <div class="avatar" style="background:linear-gradient(135deg,#F97316,#EA580C)">JD</div>
+          <div><div class="name">Joseph D.</div><div class="when">Buffalo, NY </div></div>
+        </div>
+      </div>
+      <div class="review-card reveal d1">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>"We hired Delorenzo Electric to wire our new sunroom addition. They installed plenty of convenient outlets, and dimmable canless lights plus a fan/light in the cathedral ceiling. Dave helped us select beautiful fixtures for the outside lights. Breakers with the latest safety features were added to the panel. Both Dave and Sam were friendly, knowledgeable, and efficient. Their pricing was reasonable. We can highly recommend Delorenzo Electric."</p>
+        <div class="review-author">
+          <div class="avatar" style="background:linear-gradient(135deg,#1F2937,#374151)">CM</div>
+          <div><div class="name">Carla M.</div><div class="when">Niagara Falls, NY </div></div>
+        </div>
+      </div>
+      <div class="review-card reveal d2">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p>"David does great work. I'm calling them again because I need more work done.lol"</p>
+        <div class="review-author">
+          <div class="avatar" style="background:linear-gradient(135deg,#F97316,#EA580C)">RH</div>
+          <div><div class="name">Rich H.</div><div class="when">Clarence, NY </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Request a quote</h2>
+      <p>Tell us about your project and we'll get back to you within one business day. No obligation, no pressure — just honest advice from a family that's been doing this for 30 years.</p>
+      <div class="contact-rows">
+        <a href="tel:+17165550123" class="contact-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><div class="lbl">Call Us</div><div class="val">716-731-8000</div></div>
+        </a>
+        <a href="mailto:delorenzoelectrical@gmail.com" class="contact-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+          <div><div class="lbl">Email</div><div class="val">delorenzoelectrical@gmail.com</div></div>
+        </a>
+        <div class="contact-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><div class="lbl">Service Area</div><div class="val">Western New York</div></div>
+        </div>
+        <div class="contact-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <div><div class="lbl">Hours</div><div class="val">Mon–Fri · 8am–4pm</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-card reveal d2">
+      <form id="quoteForm"
+      action="https://formspree.io/f/mpqvegaj"
+      method="POST">
+        <h3>Request a Quote</h3>
+        <p class="sub">We'll respond within one business day.</p>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="716-731-8000" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service…</option>
+            <option>Residential Electrical</option>
+            <option>Commercial Electrical</option>
+            <option>Panel / Service Upgrade</option>
+            <option>Outdoor / Landscape Lighting</option>
+            <option>EV Charger Installation</option>
+            <option>Safety Inspection</option>
+            <option>Emergency Repair</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" placeholder="Tell us about your project…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <p class="form-note">Your information is never shared. We'll only use it to contact you about your request.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Thank you!</h3>
+        <p>Your request has been received. A member of the DeLorenzo family will be in touch within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#home" class="brand">
+    <img src="images/logo.webp"
+         class="nav-logo"
+         alt="DeLorenzo Electrical">
+</a>
+        <p>Family-owned electrical contractor serving Western New York for over 30 years. Honest, professional, and reliable work you can count on.</p>
+        <div class="footer-social">
+         <a href="https://www.facebook.com/profile.php?id=61575672124889"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Facebook">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+         <a href="https://www.instagram.com/delorenzoelectricalservices/"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Instagram">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+         <a href="https://share.google/CFqmRhPDImoFaDJCM"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Google Business">
+<svg viewBox="0 0 24 24"><path fill="currentColor" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="currentColor" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="currentColor" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="currentColor" d="M12 5.38c1.6 0 3.03.55 4.16 1.64l3.13-3.13A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Residential</a></li>
+          <li><a href="#services">Commercial</a></li>
+          <li><a href="#services">Panel Upgrades</a></li>
+          <li><a href="#services">Outdoor Lighting</a></li>
+          <li><a href="#services">EV Chargers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#work">Recent Work</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17167318000">716-731-8000</a></li>
+          <li><a href="mailto:delorenzoelectrical@gmail.com">delorenzoelectrical@gmail.com</a></li>
+          <li>Buffalo, NY</li>
+          <li>Mon–Fri · 8am–4pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 DeLorenzo Electrical. Licensed & Insured in New York State.</p>
+      <div class="links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky nav
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 24) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Mobile menu
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => document.body.classList.toggle('menu-open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('menu-open')));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  
+</script>
+</body>
+</html>
